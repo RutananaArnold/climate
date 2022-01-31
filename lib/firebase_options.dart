@@ -38,29 +38,29 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDJQE6gOwllQbuyy29rcbRbvGsOlKMxUIo',
-    appId: '1:350343354465:web:436e59b390b347579cf220',
-    messagingSenderId: '350343354465',
-    projectId: 'agriculture-app-d9038',
-    authDomain: 'agriculture-app-d9038.firebaseapp.com',
-    storageBucket: 'agriculture-app-d9038.appspot.com',
+    apiKey: 'AIzaSyAFthYPNea3g1v6177iRjPcpTAN448Dl_8',
+    appId: '1:1026703359499:web:6a7495c334b405c21e510e',
+    messagingSenderId: '1026703359499',
+    projectId: 'agriculture-9bbc9',
+    authDomain: 'agriculture-9bbc9.firebaseapp.com',
+    storageBucket: 'agriculture-9bbc9.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAUYB7gCuT_udDS5_wFoteL-b8s-mFbvpg',
-    appId: '1:350343354465:android:d509749634ae3e1b9cf220',
-    messagingSenderId: '350343354465',
-    projectId: 'agriculture-app-d9038',
-    storageBucket: 'agriculture-app-d9038.appspot.com',
+    apiKey: 'AIzaSyCgsp0zOTL2SkpbYoSb87t6dXkHvrQR94M',
+    appId: '1:1026703359499:android:7bcb7430514076101e510e',
+    messagingSenderId: '1026703359499',
+    projectId: 'agriculture-9bbc9',
+    storageBucket: 'agriculture-9bbc9.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDoi8d5hojrvl1UzVtdzhisfJbEwC3vuCA',
-    appId: '1:350343354465:ios:be405c99595ec9489cf220',
-    messagingSenderId: '350343354465',
-    projectId: 'agriculture-app-d9038',
-    storageBucket: 'agriculture-app-d9038.appspot.com',
-    iosClientId: '350343354465-t7u8tn3a45tm9ule68pbdoqaai6hsedo.apps.googleusercontent.com',
+    apiKey: 'AIzaSyCKsY-80OVQbSKShBTXhhnwPPRmItX-qVM',
+    appId: '1:1026703359499:ios:f10ea7f03740eb011e510e',
+    messagingSenderId: '1026703359499',
+    projectId: 'agriculture-9bbc9',
+    storageBucket: 'agriculture-9bbc9.appspot.com',
+    iosClientId: '1026703359499-8r62mu6fo2rggd934hd25schuq5mpd2d.apps.googleusercontent.com',
     iosBundleId: 'com.example.app',
   );
 }

@@ -1,5 +1,6 @@
 import 'package:agriculture_app/components/RoundedInputField.dart';
 import 'package:agriculture_app/components/rounded_button.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:agriculture_app/screens/weatherForecast/apfile.dart' as util;
 import 'package:http/http.dart' as http;
@@ -38,7 +39,6 @@ class _ClimateState extends State<Climate> {
               fontWeight: FontWeight.bold,
               fontSize: 30),
         ),
-       
       ),
       floatingActionButton: IconButton(
           padding: const EdgeInsets.fromLTRB(0, 0, 20, 0),
@@ -51,11 +51,12 @@ class _ClimateState extends State<Climate> {
             _gotonextScreen(context);
           }),
       body: Stack(children: [
-        Center(
-            child: Image.asset(
-          "assets/images/wt.png",
+        CachedNetworkImage(
+          imageUrl: "assets/images/wt.png",
+          width: double.infinity,
+          height: double.infinity,
           fit: BoxFit.cover,
-        )),
+        ),
         Container(
           margin: const EdgeInsets.fromLTRB(0.0, 70.0, 0.0, 0.0),
           child: updateTempWidget(
@@ -96,7 +97,7 @@ class _ClimateState extends State<Climate> {
                           fontWeight: FontWeight.w400,
                           fontSize: 80.9,
                           color: Colors.green[200],
-                          /* fontWeight: FontWeight.w500 */
+                        
                           fontFamily: "Helvatic",
                         ),
                       ),
