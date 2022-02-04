@@ -1,5 +1,3 @@
-import 'package:cached_network_image/cached_network_image.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class FactsDetails extends StatelessWidget {
@@ -44,13 +42,8 @@ class FactsDetails extends StatelessWidget {
                     flex: 2,
                     child: Center(child: Text(sender + " -- " + time))),
                 Expanded(
-                    child: CircleAvatar(
-                  radius: 20,
-                  child: CachedNetworkImage(
-                    imageUrl: imageUrl,
-                    fit: BoxFit.fill,
-                  ),
-                ))
+                    child: AspectRatio(
+                        aspectRatio: 2, child: Image.asset(imageUrl)))
               ],
             ),
             const SizedBox(

@@ -3,7 +3,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterfire_ui/auth.dart';
 
-
 class AuthGate extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -18,7 +17,7 @@ class AuthGate extends StatelessWidget {
                 padding: const EdgeInsets.all(20),
                 child: AspectRatio(
                   aspectRatio: 1,
-                  child: Image.network('assets/images/Agriculture-Logo.jpg'),
+                  child: Image.asset("assets/images/Agriculture-Logo.jpg"),
                 ),
               );
             },
@@ -27,8 +26,8 @@ class AuthGate extends StatelessWidget {
                 padding: const EdgeInsets.only(bottom: 8),
                 child: Text(
                   action == AuthAction.signIn
-                      ? 'Welcome to the shopping verse! Please sign in to continue.'
-                      : 'Welcome to shopping verse! Please create an account to continue',
+                      ? 'Welcome to the weather app! Please sign in to continue.'
+                      : 'Welcome to  weather app! Please create an account to continue',
                 ),
               );
             },
@@ -51,7 +50,6 @@ class AuthGate extends StatelessWidget {
           );
         }
         return const Index();
-      
       },
     );
   }

@@ -50,19 +50,23 @@ class _ClimateState extends State<Climate> {
           onPressed: () {
             _gotonextScreen(context);
           }),
-      body: Stack(children: [
-        CachedNetworkImage(
-          imageUrl: "assets/images/wt.png",
-          width: double.infinity,
-          height: double.infinity,
-          fit: BoxFit.cover,
+      body: Container(
+        width: MediaQuery.of(context).size.width,
+        height: MediaQuery.of(context).size.height,
+        padding: EdgeInsets.zero,
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            fit: BoxFit.fill,
+            image: AssetImage("assets/images/wt.png"),
+          ),
         ),
-        Container(
+        child: Container(
           margin: const EdgeInsets.fromLTRB(0.0, 70.0, 0.0, 0.0),
           child: updateTempWidget(
+              // ignore: prefer_if_null_operators
               '${_cityEntered == null ? util.defaultCity : _cityEntered}'),
         ),
-      ]),
+      ),
     );
   }
 
@@ -97,7 +101,6 @@ class _ClimateState extends State<Climate> {
                           fontWeight: FontWeight.w400,
                           fontSize: 80.9,
                           color: Colors.green[200],
-                        
                           fontFamily: "Helvatic",
                         ),
                       ),

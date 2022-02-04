@@ -75,12 +75,9 @@ class _FactsPageState extends State<FactsPage> {
                                 ),
                               )),
                           Expanded(
-                              child: CircleAvatar(
-                            child: CachedNetworkImage(
-                              imageUrl: faq.avatar,
-                              fit: BoxFit.fill,
-                            ),
-                          )),
+                              child: AspectRatio(
+                                  aspectRatio: 2,
+                                  child: Image.asset(faq.avatar))),
                         ],
                       ),
                     )),
